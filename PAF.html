@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Organizador de Tareas</h1>
+    </header>
+    <div class="nuevo">
+        <input type="text" id="nueva-tarea" placeholder="Escribe una nueva tarea...">
+        <button id="agregar-tarea">Agregar Tarea</button>
+    </div>
+    <div class="tablero">
+        <div class="seccion pendientes">
+            <h2>Tareas Pendientes</h2>
+            <ul id="pendientes">
+                <li class="tarea">Terminar el informe del proyecto<button>Eliminar</button></li>
+                <li class="tarea">Enviar correo al equipo<button>Eliminar</button></li>
+                <li class="tarea">Revisar la presentación<button>Eliminar</button></li>
+                <li class="tarea">Organizar la reunión del lunes<button>Eliminar</button></li>
+                <li class="tarea">Actualizar el calendario de entregas<button>Eliminar</button></li>
+                <li class="tarea">Preparar el material para el cliente<button>Eliminar</button></li>
+                <li class="tarea">Configurar las herramientas de trabajo<button>Eliminar</button></li>
+                <li class="tarea">Revisar feedback del equipo<button>Eliminar</button></li>
+                <li class="tarea">Completar el análisis de datos<button>Eliminar</button></li>
+                <li class="tarea">Hacer copia de seguridad del proyecto<button>Eliminar</button></li>
+            </ul>
+        </div>
+        <div class="seccion hechas">
+            <h2>Tareas Completadas</h2>
+            <ul id="hechas"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
